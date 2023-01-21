@@ -1,0 +1,17 @@
+// // Field { name: "heading", data_type: Utf8, nullable: true, dict_id: 0, dict_is_ordered: false, metadata: {} }                
+// struct FieldObject {
+//     name: String,
+//     data_type: String,
+//     nullable: bool,
+//     dict_id: i64,
+//     dict_is_ordered: bool,
+// }
+
+// let field_object = FieldObject {
+//     name: field.name().to_string(),
+//     data_type: field.data_type().to_string(),
+//     nullable: field.is_nullable(),
+//     dict_id: field.dict_id(),
+//     dict_is_ordered: field.dict_is_ordered(),
+// };
+// header.push(field_object);
