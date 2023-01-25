@@ -3,6 +3,7 @@ use log::{ info }; // , warn, error, debug, trace
 use crate::{
     services::entries,
     services::data_processing,
+    services::data_fixed_csv,
     static_pages::home,
 };
 
@@ -21,6 +22,7 @@ pub fn config_services(cfg: &mut web::ServiceConfig) {
             .service(
                 web::scope("/data-processing")
                     .service(data_processing::csv_upload)
+                    .service(data_fixed_csv::testing)
                     // .service(data_processing::csv_upload_get)
             ),
     );
